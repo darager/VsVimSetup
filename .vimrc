@@ -110,3 +110,7 @@ vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
+
+" go to Error shortcuts
+nnoremap <leader>e :vsc View.NextError<CR>
+nnoremap <leader>ge :vsc View.PreviousError<CR>
