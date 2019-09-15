@@ -114,3 +114,6 @@ nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 " go to Error shortcuts
 nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
+
+" set breakpoint
+nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
