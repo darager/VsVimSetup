@@ -1,6 +1,9 @@
 " disable backwards compatability
 set nocp
 
+" set leader
+let mapleader=','
+
 " always show 2 lines above and below the cursor
 set scrolloff=2
 
@@ -66,6 +69,7 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" surround-vim replacement shortcuts
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
 nnoremap s] ciw[<C-r>"]<Esc>
@@ -100,3 +104,9 @@ vnoremap S] c[<C-r>"]<Esc>
 vnoremap S} c{<C-r>"}<Esc>
 vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
+
+" NERDCommenter replacements
+vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
+vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
+nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
+nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
