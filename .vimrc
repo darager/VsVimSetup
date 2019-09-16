@@ -1,6 +1,3 @@
-" disable backwards compatability
-set nocp
-
 " set leader
 let mapleader=','
 
@@ -10,7 +7,6 @@ set scrolloff=2
 set history=999
 
 set number
-set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -21,23 +17,11 @@ set nomodeline
 " Always display the status bar
 set laststatus=2
 
-" Height of the command bar
-set cmdheight=1
-
 " Enable line numbers
 set number
 
 " Display the cursorline
 set cursorline
-
-" highlight 80th column
-set colorcolumn=80
-
-" show matching brackets
-set showmatch
-
-" turn off error sounds
-set noerrorbells
 
 " Search
 set ignorecase
@@ -47,15 +31,9 @@ set incsearch
 
 " disable swap and backup files
 set nobackup
-set nowritebackup
-set noswapfile
 
 " Enable syntax highlihting
 syntax enable
-
-" enable faster performance
-set lazyredraw
-set ttyfast
 
 " disable arrow keys in normal mode
 map <up> <nop>
@@ -69,7 +47,6 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" surround-vim replacement shortcuts
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
 nnoremap s] ciw[<C-r>"]<Esc>
