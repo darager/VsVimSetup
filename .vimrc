@@ -94,8 +94,8 @@ nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
 
 " tab navigation
-nnoremap <leader>wl :vsc Window.PreviousTab<CR>
-nnoremap <leader>wj :vsc Window.NextTab<CR>
+nnoremap <leader>wj :vsc Window.PreviousTab<CR>
+nnoremap <leader>wl :vsc Window.NextTab<CR>
 
 " set breakpoint
 nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
