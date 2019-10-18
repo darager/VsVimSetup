@@ -99,3 +99,7 @@ nnoremap <leader>wl :vsc Window.NextTab<CR>
 
 " set breakpoint
 nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
+
+" use the visual studio forward and backward navigation
+nnoremap <C-O> :vsc View.NavigateBackward<CR>
+nnoremap <C-I> :vsc View.NavigateForward<CR>
