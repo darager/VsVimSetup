@@ -29,9 +29,6 @@ set smartcase
 set nohlsearch
 set incsearch
 
-" Enable syntax highlihting
-syntax enable
-
 " disable arrow keys in normal mode
 map <up> <nop>
 map <down> <nop>
