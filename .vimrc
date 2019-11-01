@@ -29,9 +29,6 @@ set smartcase
 set nohlsearch
 set incsearch
 
-" disable swap and backup files
-set nobackup
-
 " Enable syntax highlihting
 syntax enable
 
