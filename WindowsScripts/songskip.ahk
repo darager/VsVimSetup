@@ -3,3 +3,6 @@
 
 ; "CTRL + RIGHT"  for next
 ^Right::Media_Next
+
+;"CTRL + SPACE" for pause
+^Space::Media_Play_Pause
