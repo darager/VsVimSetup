@@ -1,5 +1,5 @@
 # VsSetup
-##Visual Studio Extensions
+## Visual Studio Extensions
 - Add New File
 - Format document on Save
 - Github Extension for Visual Studio
