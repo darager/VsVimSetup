@@ -13,14 +13,13 @@ public class TinyVimMode
 
     public void OnKeyInputStartNormalMode(object sender, KeyInputStartEventArgs e)
     {
+        Buffer = string.Empty;
+        
         if (e.KeyInput.RawChar.IsSome() && !char.IsControl(e.KeyInput.Char))
-        {
             Buffer += e.KeyInput.Char.ToString();
-        }
         else
-        {
             Buffer = string.Empty;
-        }
+        
         foreach (var cp in CommandParsers)
         {
             if (cp.CommandEquals(e.KeyInput))
@@ -29,26 +28,14 @@ public class TinyVimMode
                 return;
             }
         }
-        //no match
-        Buffer = string.Empty;
     }
     public void OnKeyInputStartCommandPromptMode(object sender, KeyInputStartEventArgs e)
     {
         if (e.KeyInput.RawChar.IsSome() && !char.IsControl(e.KeyInput.Char))
-        {
             Buffer += e.KeyInput.Char.ToString();
-        }
-        else if (e.KeyInput.Key == VimKey.Back)
-        {
-            if (1 < Buffer.Length)
-            {
-                Buffer = Buffer.Substring(0, Buffer.Length - 1);
-            }
-            else if (Buffer.Length == 1)
-            {
-                Buffer = string.Empty;
-            }
-        }
+        else if (e.KeyInput.Key == VimKey.Back && Buffer.Length == 1)
+            Buffer = string.Empty;
+        
         foreach (var cp in CommandParsers)
         {
             if (cp.CommandEquals(e.KeyInput))
