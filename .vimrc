@@ -29,18 +29,6 @@ set smartcase
 set nohlsearch
 set incsearch
 
-" disable arrow keys in normal mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" disable arrow keys in insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
 nnoremap s] ciw[<C-r>"]<Esc>
@@ -98,5 +86,5 @@ nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
 nnoremap <C-O> :vsc View.NavigateBackward<CR>
 nnoremap <C-I> :vsc View.NavigateForward<CR>
 
-" start the solution.csx
+" start the solution script
 nnoremap <C-n> :csx solution<CR>
