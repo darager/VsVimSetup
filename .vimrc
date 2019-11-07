@@ -29,6 +29,9 @@ set smartcase
 set nohlsearch
 set incsearch
 
+" Enable very magic mode for searching by default
+nnoremap / /\v
+
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
 nnoremap s] ciw[<C-r>"]<Esc>
