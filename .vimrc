@@ -88,3 +88,6 @@ nnoremap <C-I> :vsc View.NavigateForward<CR>
 
 " start the solution script
 nnoremap <C-n> :csx solution<CR>
+
+" save and close all open documents
+nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
