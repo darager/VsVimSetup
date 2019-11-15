@@ -400,7 +400,7 @@ enterCp.CommandAction = (x) =>
     normalMode.Buffer = string.Empty;
     UIHierarchyItem item = GetSelectedItem();
     ProjectItem pi = GetSelectedProjectItem();
-    if (pi != null && (pi.Kind == PhysicalFile || projectItem.Kind == SolutionItem))
+    if (pi != null && (pi.Kind == PhysicalFile || pi.Kind == SolutionItem))
     {
         EndIntercept();
     }
@@ -742,15 +742,15 @@ private void GetSearchList(ref List<SearchItem> searchList, UIHierarchyItem item
 {
     foreach (UIHierarchyItem uiItem in item.UIHierarchyItems)
     {
-        ProjectItem projectItem = uiItem.Object as ProjectItem;
-        if (projectItem != null && projectItem.Kind == VirtualFolder)
+        ProjectItem pi = uiItem.Object as ProjectItem;
+        if (pi != null && pi.Kind == VirtualFolder)
         {
             continue;
         }
 
         searchList.Add(new SearchItem() { Name = uiItem.Name.ToLower(), Item = uiItem });
 
-        if (projectItem != null && (projectItem.Kind == PhysicalFile || projectItem.Kind == SolutionItem))
+        if (pi != null && (pi.Kind == PhysicalFile || pi.Kind == SolutionItem))
         {
             continue;
         }
