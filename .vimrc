@@ -91,3 +91,6 @@ nnoremap <C-n> :csx solution<CR>
 
 " save and close all open documents
 nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
+
+" place a semicolon at the end of the line
+nnoremap ; mkA;<ESC>`k
