@@ -24,9 +24,9 @@ set number
 set cursorline
 
 " Search
+set nohlsearch
 set ignorecase
 set smartcase
-set nohlsearch
 set incsearch
 
 " Surround simulating bindings
@@ -64,13 +64,16 @@ vnoremap S} c{<C-r>"}<Esc>
 vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
 
+" place a semicolon at the end of the line
+nnoremap ; A;<ESC>
+
 " NERDCommenter replacements
 vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 
-" go to Error shortcuts
+" go to errors
 nnoremap <leader>ee :vsc View.ErrorList<CR>
 nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
@@ -92,5 +95,7 @@ nnoremap <C-n> :csx solution<CR>
 " save and close all open documents
 nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
 
-" place a semicolon at the end of the line
-nnoremap ; mkA;<ESC>`k
+" function navigation
+nnoremap gd :vsc Edit.GoToDefinition<CR>
+nnoremap gr :vsc Edit.FindAllReferences<CR>
+nnoremap gi :vsc Edit.GoToImplementation<CR>
