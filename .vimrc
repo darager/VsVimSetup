@@ -6,7 +6,7 @@ set scrolloff=2
 
 set history=999
 
-set number
+set relativenumber
 set tabstop=2
 set shiftwidth=2
 set expandtab
