@@ -98,4 +98,3 @@ nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
 " function navigation
 nnoremap gd :vsc Edit.GoToDefinition<CR>
 nnoremap gr :vsc Edit.FindAllReferences<CR>
-nnoremap gi :vsc Edit.GoToImplementation<CR>
