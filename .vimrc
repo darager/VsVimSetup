@@ -79,8 +79,8 @@ nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
 
 " tab navigation
-nnoremap <c-w>h :vsc Window.PreviousTab<CR>
-nnoremap <c-w>l :vsc Window.NextTab<CR>
+" use gt and gT to move between tabs
+nnoremap <c-w><c-w> :vsc Window.NextDocumentWindow<CR>
 
 " set breakpoint
 nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
