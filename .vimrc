@@ -43,6 +43,9 @@ nnoremap sw> ciW<lt><C-r>"><Esc>
 nnoremap sw" ciW"<C-r>""<Esc>
 nnoremap sw' ciW'<C-r>"'<Esc>
 
+" surround the current line in { }
+nnoremap s{ I{<CR><Esc>A<CR>}<Esc>k_
+
 " Surround delete bindings
 nnoremap ds) vi(dvhp
 nnoremap ds] vi[dvhp
