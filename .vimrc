@@ -58,6 +58,16 @@ nnoremap ds' vi'dvhp
 nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>
 nnoremap cs'" vi'oh<Esc>msvi'l<Esc>cl"<Esc>`scl"<Esc>
 
+" full line Surround bindings
+nnoremap yss" I"<Esc>A"<Esc>
+nnoremap yss' I'<Esc>A'<Esc>
+nnoremap yss) I(<Esc>A)<Esc>
+nnoremap yss] I[<Esc>A]<Esc>
+nnoremap yss} I{<Esc>A}<Esc>
+nnoremap yss( I( <Esc>A )<Esc>
+nnoremap yss[ I[ <Esc>A ]<Esc>
+nnoremap yss{ I{ <Esc>A }<Esc>
+
 " Surround visual selected text
 vnoremap S" c"<C-r>""<Esc>
 vnoremap S' c"<C-r>"'<Esc>
@@ -68,7 +78,7 @@ vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
 
 " place a semicolon at the end of the line
-nnoremap ; A;<ESC>
+nnoremap ; mkA;<ESC>'k
 
 " NERDCommenter replacements
 vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
