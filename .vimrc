@@ -55,10 +55,26 @@ nnoremap ds" vi"dvhp
 nnoremap ds' vi'dvhp
 
 " Surround change bindings
-nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>
+nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>                                                              1 nnoremap cs") vi"oh<Esc>msvi"l<Esc>cl)<Esc>`scl)<Esc>                                                              2 nnoremap cs"] vi"oh<Esc>msvi"l<Esc>cl]<Esc>`scl]<Esc>
+nnoremap cs"} vi"oh<Esc>msvi"l<Esc>cl}<Esc>`scl}<Esc>
 nnoremap cs'" vi'oh<Esc>msvi'l<Esc>cl"<Esc>`scl"<Esc>
+nnoremap cs') vi'oh<Esc>msvi'l<Esc>cl)<Esc>`scl)<Esc>
+nnoremap cs'] vi'oh<Esc>msvi'l<Esc>cl]<Esc>`scl]<Esc>
+nnoremap cs'} vi'oh<Esc>msvi'l<Esc>cl}<Esc>`scl}<Esc>
+nnoremap cs)' vi)oh<Esc>msvi)l<Esc>cl'<Esc>`scl'<Esc>
+nnoremap cs)" vi)oh<Esc>msvi)l<Esc>cl"<Esc>`scl"<Esc>
+nnoremap cs)] vi)oh<Esc>msvi)l<Esc>cl]<Esc>`scl]<Esc>
+nnoremap cs)} vi)oh<Esc>msvi)l<Esc>cl}<Esc>`scl}<Esc>
+nnoremap cs]' vi]oh<Esc>msvi]l<Esc>cl'<Esc>`scl'<Esc>
+nnoremap cs]" vi]oh<Esc>msvi]l<Esc>cl"<Esc>`scl"<Esc>
+nnoremap cs]) vi]oh<Esc>msvi]l<Esc>cl)<Esc>`scl)<Esc>
+nnoremap cs]} vi]oh<Esc>msvi]l<Esc>cl}<Esc>`scl}<Esc>
+nnoremap cs}' vi}oh<Esc>msvi}l<Esc>cl'<Esc>`scl'<Esc>
+nnoremap cs}" vi}oh<Esc>msvi}l<Esc>cl"<Esc>`scl"<Esc>
+nnoremap cs}) vi}oh<Esc>msvi}l<Esc>cl)<Esc>`scl)<Esc>
+nnoremap cs}] vi}oh<Esc>msvi}l<Esc>cl]<Esc>`scl]<Esc>
 
-" full line Surround bindings
+" Surround full line bindings
 nnoremap yss" I"<Esc>A"<Esc>
 nnoremap yss' I'<Esc>A'<Esc>
 nnoremap yss) I(<Esc>A)<Esc>
@@ -77,7 +93,7 @@ vnoremap S} c{<C-r>"}<Esc>
 vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
 
-" place a semicolon at the end of the line
+" semicolon placement
 nnoremap ; mkA;<ESC>'k
 
 " NERDCommenter replacements
