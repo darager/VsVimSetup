@@ -55,7 +55,7 @@ nnoremap ds" vi"dvhp
 nnoremap ds' vi'dvhp
 
 " Surround change bindings
-nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>                                                              1 nnoremap cs") vi"oh<Esc>msvi"l<Esc>cl)<Esc>`scl)<Esc>                                                              2 nnoremap cs"] vi"oh<Esc>msvi"l<Esc>cl]<Esc>`scl]<Esc>
+nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>
 nnoremap cs'" vi'oh<Esc>msvi'l<Esc>cl"<Esc>`scl"<Esc>
 
 " Surround full line bindings
