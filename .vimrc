@@ -112,3 +112,7 @@ nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
 " function navigation
 nnoremap gd :vsc Edit.GoToDefinition<CR>
 nnoremap gr :vsc Edit.FindAllReferences<CR>
+
+" indent lines and reselect block
+vnoremap > >gv
+vnoremap < <gv
