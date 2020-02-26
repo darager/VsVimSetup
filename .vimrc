@@ -7,7 +7,7 @@ set scrolloff=2
 set history=999
 
 set relativenumber
-set tabstop=2
+set tabstop=2 " Hier wurde die nummer 2 zugewiesen ;)
 set shiftwidth=2
 set expandtab
 set clipboard=unnamed
