@@ -29,6 +29,10 @@ set ignorecase
 set smartcase
 set incsearch
 
+" remap escape
+inoremap ö <Esc>
+vnoremap ö <Esc>
+
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
 nnoremap s] ciw[<C-r>"]<Esc>
