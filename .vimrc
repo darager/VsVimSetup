@@ -81,7 +81,15 @@ vnoremap S} c{<C-r>"}<Esc>
 vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
 
-" semicolon placement
+" folding
+nnoremap zm :vsc Edit.CollapseCurrentRegion<CR>
+nnoremap zM :vsc Edit.CollapsetoDefinitions<CR>
+
+" unfolding
+nnoremap zr :vsc Edit.ExpandCurrentRegion<CR>
+nnoremap zR :vsc Edit.ExpandAllOutlining<CR>
+
+" faster semicolon
 nnoremap ; mkA;<ESC>'k
 
 " NERDCommenter replacements
