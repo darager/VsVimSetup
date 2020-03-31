@@ -128,3 +128,8 @@ nnoremap gr :vsc Edit.FindAllReferences<CR>
 " indent lines and reselect block
 vnoremap > >gv
 vnoremap < <gv
+
+" run tests and open test explorer
+nnoremap ,tt :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
+nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
