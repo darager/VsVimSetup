@@ -133,3 +133,6 @@ vnoremap < <gv
 nnoremap ,tt :vsc TestExplorer.ShowTestExplorer<CR>
 nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
 nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
+
+" show info
+nnoremap <space> :vsc Edit.QuickInfo<CR>
