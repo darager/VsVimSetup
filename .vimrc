@@ -104,8 +104,8 @@ nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
 
 " tab navigation
-nnoremap J :vsc Window.NextDocumentWindow<CR>
-nnoremap K :vsc Window.PreviousDocumentWindow<CR>
+nnoremap <C-l> :vsc Window.NextDocumentWindow<CR>
+nnoremap <C-h> :vsc Window.PreviousDocumentWindow<CR>
 nnoremap <c-w><c-w> :vsc Window.NextDocumentWindow<CR>
 
 " set breakpoint
@@ -135,4 +135,4 @@ nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
 nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
 
 " show info
-nnoremap <space> :vsc Edit.QuickInfo<CR>
+nnoremap K :vsc Edit.QuickInfo<CR>
