@@ -29,9 +29,9 @@ set ignorecase
 set smartcase
 set incsearch
 
-" remap escape
-inoremap ö <Esc>
-vnoremap ö <Esc>
+" : is kinda laggy in vsvim
+nnoremap <leader>w :w<CR>
+nnoremap <leader>wq :wq<CR>
 
 " Surround simulating bindings
 nnoremap s) ciw(<C-r>")<Esc>
