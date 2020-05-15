@@ -104,8 +104,8 @@ nnoremap <leader>e :vsc View.NextError<CR>
 nnoremap <leader>ge :vsc View.PreviousError<CR>
 
 " tab navigation
-nnoremap <C-l> :vsc Window.NextDocumentWindow<CR>
-nnoremap <C-h> :vsc Window.PreviousDocumentWindow<CR>
+nnoremap <C-k> :vsc Window.NextDocumentWindow<CR>
+nnoremap <C-j> :vsc Window.PreviousDocumentWindow<CR>
 nnoremap <c-w><c-w> :vsc Window.NextDocumentWindow<CR>
 
 " set breakpoint
