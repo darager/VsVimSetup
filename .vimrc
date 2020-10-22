@@ -136,3 +136,7 @@ nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
 
 " show info
 nnoremap ,k :vsc Edit.QuickInfo<CR>
+
+" make lower/upper case
+map gU :vsc Edit.MakeUppercase<CR>
+map gu :vsc Edit.MakeLowercase<CR>
