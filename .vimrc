@@ -132,6 +132,7 @@ vnoremap < <gv
 
 " run tests and open test explorer
 nnoremap ,tt :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap ,tdb :vsc TestExplorer.DebugTestsInView<CR>
 nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
 nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
 
