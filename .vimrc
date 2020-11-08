@@ -90,18 +90,18 @@ nnoremap zr :vsc Edit.ExpandCurrentRegion<CR>
 nnoremap zR :vsc Edit.ExpandAllOutlining<CR>
 
 " faster semicolon
-nnoremap ; mkA;<ESC>'k
+nnoremap ; A;<ESC>_
 
 " NERDCommenter replacements
-vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
-vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
+vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
+vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
 
 " go to errors
 nnoremap <leader>ee :vsc View.ErrorList<CR>
 nnoremap <leader>e :vsc View.NextError<CR>
-nnoremap <leader>ge :vsc View.PreviousError<CR>
+nnoremap <leader>E :vsc View.PreviousError<CR>
 
 " tab navigation
 nnoremap K :vsc Window.NextDocumentWindow<CR>
@@ -132,9 +132,9 @@ vnoremap < <gv
 
 " run tests and open test explorer
 nnoremap ,tt :vsc TestExplorer.ShowTestExplorer<CR>
-nnoremap ,tdb :vsc TestExplorer.DebugTestsInView<CR>
-nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
+nnoremap ,tdb :vsc TestExplorer.DebugAllTestsInContext<CR>
 nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
+nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
 
 " show info
 nnoremap ,k :vsc Edit.QuickInfo<CR>
