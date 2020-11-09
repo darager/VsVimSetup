@@ -108,9 +108,6 @@ nnoremap K :vsc Window.NextDocumentWindow<CR>
 nnoremap J :vsc Window.PreviousDocumentWindow<CR>
 nnoremap <c-w><c-w> :vsc Window.NextDocumentWindow<CR>
 
-" set breakpoint
-nnoremap <leader>b :vsc Debug.ToggleBreakpoint<CR>
-
 " use the visual studio forward and backward navigation
 nnoremap <C-O> :vsc View.NavigateBackward<CR>
 nnoremap <C-I> :vsc View.NavigateForward<CR>
@@ -142,3 +139,11 @@ nnoremap ,k :vsc Edit.QuickInfo<CR>
 " make lower/upper case
 map gU :vsc Edit.MakeUppercase<CR>
 map gu :vsc Edit.MakeLowercase<CR>
+
+" debugging shortcuts
+map <leader>b :vsc Debug.ToggleBreakpoint<CR>
+map <leader>dl :vsc Debug.StepInto<CR>
+map <leader>dj :vsc Debug.StepOver<CR>
+map <leader>dk :vsc Debug.StepOut<CR>
+map <leader>drc :vsc Debug.RunToCursor<CR>
+map <leader>d_ :vsc Debug.Restart<CR>
