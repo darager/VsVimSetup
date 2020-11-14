@@ -147,3 +147,7 @@ map <leader>dj :vsc Debug.StepOver<CR>
 map <leader>dk :vsc Debug.StepOut<CR>
 map <leader>drc :vsc Debug.RunToCursor<CR>
 map <leader>d_ :vsc Debug.Restart<CR>
+
+" visual select a method
+nnoremap vam ?public\|private<CR>V/{<CR>%
+nnoremap dam ?public\|private<CR>V/{<CR>%x
