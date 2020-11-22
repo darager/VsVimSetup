@@ -89,9 +89,6 @@ nnoremap zM :vsc Edit.CollapsetoDefinitions<CR>
 nnoremap zr :vsc Edit.ExpandCurrentRegion<CR>
 nnoremap zR :vsc Edit.ExpandAllOutlining<CR>
 
-" faster semicolon
-nnoremap ; A;<ESC>_
-
 " NERDCommenter replacements
 nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
 vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
