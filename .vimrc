@@ -1,5 +1,5 @@
 " set leader
-let mapleader=','
+let mapleader=' '
 
 " always show 2 lines above and below the cursor
 set scrolloff=2
@@ -125,13 +125,13 @@ vnoremap > >gv
 vnoremap < <gv
 
 " run tests and open test explorer
-nnoremap ,tt :vsc TestExplorer.ShowTestExplorer<CR>
-nnoremap ,tdb :vsc TestExplorer.DebugAllTestsInContext<CR>
-nnoremap ,ta :vsc TestExplorer.RunAllTests<CR>
-nnoremap ,tr :vsc TestExplorer.RepeatLastRun<CR>
+nnoremap <leader>tt :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap <leader>tdb :vsc TestExplorer.DebugAllTestsInContext<CR>
+nnoremap <leader>ta :vsc TestExplorer.RunAllTests<CR>
+nnoremap <leader>tr :vsc TestExplorer.RepeatLastRun<CR>
 
 " show info
-nnoremap ,k :vsc Edit.QuickInfo<CR>
+nnoremap <leader>k :vsc Edit.QuickInfo<CR>
 
 " make lower/upper case
 map gU :vsc Edit.MakeUppercase<CR>
