@@ -1,5 +1,5 @@
 " set leader
-let mapleader=' '
+let mapleader=','
 
 " always show 2 lines above and below the cursor
 set scrolloff=2
@@ -145,6 +145,17 @@ map <leader>dk :vsc Debug.StepOut<CR>
 map <leader>drc :vsc Debug.RunToCursor<CR>
 map <leader>d_ :vsc Debug.Restart<CR>
 
-" visual select a method
-nnoremap vam ?public\|private<CR>V/{<CR>%
-nnoremap dam ?public\|private<CR>V/{<CR>%x
+" method movement & manipulation
+"   \(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(
+" move to next method
+nnoremap ]m /\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>
+" move to next method end
+nnoremap ]M /\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>j_%
+" move to previous method
+nnoremap [m ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>
+" move to previous method end TODO: implement correctly
+"nnoremap [M ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>j_%
+" delete method
+nnoremap dam ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>Vj_%x
+" visual select method
+nnoremap vam ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>Vj_%o
