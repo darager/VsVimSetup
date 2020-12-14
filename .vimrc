@@ -159,3 +159,6 @@ nnoremap [m ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<
 nnoremap dam ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>Vj_%x
 " visual select method
 nnoremap vam ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>Vj_%o
+
+" go to parameter list of method
+nnoremap gp ?\(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(<CR>f(
