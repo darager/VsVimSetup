@@ -6,7 +6,7 @@ set scrolloff=2
 
 set history=999
 
-set relativenumber
+set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -110,7 +110,7 @@ nnoremap <C-O> :vsc View.NavigateBackward<CR>
 nnoremap <C-I> :vsc View.NavigateForward<CR>
 
 " start the solution script
-nnoremap <C-n> :csx solution<CR>
+nnoremap <C-n> :vsc View.SolutionExplorer<CR>
 
 " save and close all open documents
 nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
