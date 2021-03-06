@@ -6,7 +6,7 @@ set scrolloff=2
 
 set history=999
 
-set number
+set relativenumber
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -144,6 +144,7 @@ map <leader>dj :vsc Debug.StepOver<CR>
 map <leader>dk :vsc Debug.StepOut<CR>
 map <leader>drc :vsc Debug.RunToCursor<CR>
 map <leader>d_ :vsc Debug.Restart<CR>
+map <leader>dw :vsc Debug.AddWatch<CR>
 
 " method movement & manipulation
 "   \(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(
