@@ -1,5 +1,5 @@
 " set leader
-let mapleader=','
+let mapleader=","
 
 " always show 2 lines above and below the cursor
 set scrolloff=2
@@ -82,69 +82,69 @@ vnoremap S> c<lt><C-r>"><Esc>
 vnoremap S* c/*<C-r>"*/<Esc>
 
 " folding
-nnoremap zm :vsc Edit.CollapseCurrentRegion<CR>
-nnoremap zM :vsc Edit.CollapsetoDefinitions<CR>
+nnoremap zm :vscmd Edit.CollapseCurrentRegion<CR>
+nnoremap zM :vscmd Edit.CollapsetoDefinitions<CR>
 
 " unfolding
-nnoremap zr :vsc Edit.ExpandCurrentRegion<CR>
-nnoremap zR :vsc Edit.ExpandAllOutlining<CR>
+nnoremap zr :vscmd Edit.ExpandCurrentRegion<CR>
+nnoremap zR :vscmd Edit.ExpandAllOutlining<CR>
 
 " NERDCommenter replacements
-nnoremap <leader>cc :vsc Edit.CommentSelection<CR>
-vnoremap <leader>cc :vsc Edit.CommentSelection<CR>
-nnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
-vnoremap <leader>cu :vsc Edit.UncommentSelection<CR>
+nnoremap <leader>cc :vscmd Edit.CommentSelection<CR>
+vnoremap <leader>cc :vscmd Edit.CommentSelection<CR>
+nnoremap <leader>cu :vscmd Edit.UncommentSelection<CR>
+vnoremap <leader>cu :vscmd Edit.UncommentSelection<CR>
 
 " go to errors
-nnoremap <leader>ee :vsc View.ErrorList<CR>
-nnoremap <leader>e :vsc View.NextError<CR>
-nnoremap <leader>E :vsc View.PreviousError<CR>
+nnoremap <leader>ee :vscmd View.ErrorList<CR>
+nnoremap <leader>e :vscmd View.NextError<CR>
+nnoremap <leader>E :vscmd View.PreviousError<CR>
 
 " tab navigation
-nnoremap K :vsc Window.NextDocumentWindow<CR>
-nnoremap J :vsc Window.PreviousDocumentWindow<CR>
-nnoremap <c-w><c-w> :vsc Window.NextDocumentWindow<CR>
+nnoremap K :vscmd Window.NextDocumentWindow<CR>
+nnoremap J :vscmd Window.PreviousDocumentWindow<CR>
+nnoremap <c-w><c-w> :vscmd Window.NextDocumentWindow<CR>
 
 " use the visual studio forward and backward navigation
-nnoremap <C-O> :vsc View.NavigateBackward<CR>
-nnoremap <C-I> :vsc View.NavigateForward<CR>
+nnoremap <C-O> :vscmd View.NavigateBackward<CR>
+nnoremap <C-I> :vscmd View.NavigateForward<CR>
 
 " start the solution script
-nnoremap <C-n> :vsc View.SolutionExplorer<CR>
+nnoremap <C-n> :vscmd View.SolutionExplorer<CR>
 
 " save and close all open documents
-nnoremap <leader>qa :vsc File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
+nnoremap <leader>qa :vscmd File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
 
 " function navigation
-nnoremap gd :vsc Edit.GoToDefinition<CR>
-nnoremap gi :vsc Edit.GoToImplementation<CR>
-nnoremap gr :vsc Edit.FindAllReferences<CR>
+nnoremap gd :vscmd Edit.GoToDefinition<CR>
+nnoremap gi :vscmd Edit.GoToImplementation<CR>
+nnoremap gr :vscmd Edit.FindAllReferences<CR>
 
 " indent lines and reselect block
 vnoremap > >gv
 vnoremap < <gv
 
 " run tests and open test explorer
-nnoremap <leader>tt :vsc TestExplorer.ShowTestExplorer<CR>
-nnoremap <leader>tdb :vsc TestExplorer.DebugAllTestsInContext<CR>
-nnoremap <leader>ta :vsc TestExplorer.RunAllTests<CR>
-nnoremap <leader>tr :vsc TestExplorer.RepeatLastRun<CR>
+nnoremap <leader>tt :vscmd TestExplorer.ShowTestExplorer<CR>
+nnoremap <leader>tdb :vscmd TestExplorer.DebugAllTestsInContext<CR>
+nnoremap <leader>ta :vscmd TestExplorer.RunAllTests<CR>
+nnoremap <leader>tr :vscmd TestExplorer.RepeatLastRun<CR>
 
 " show info
-nnoremap <leader>k :vsc Edit.QuickInfo<CR>
+nnoremap <leader>k :vscmd Edit.QuickInfo<CR>
 
 " make lower/upper case
-map gU :vsc Edit.MakeUppercase<CR>
-map gu :vsc Edit.MakeLowercase<CR>
+map gU :vscmd Edit.MakeUppercase<CR>
+map gu :vscmd Edit.MakeLowercase<CR>
 
 " debugging shortcuts
-map <leader>b :vsc Debug.ToggleBreakpoint<CR>
-map <leader>dl :vsc Debug.StepInto<CR>
-map <leader>dj :vsc Debug.StepOver<CR>
-map <leader>dk :vsc Debug.StepOut<CR>
-map <leader>drc :vsc Debug.RunToCursor<CR>
-map <leader>d_ :vsc Debug.Restart<CR>
-map <leader>dw :vsc Debug.AddWatch<CR>
+map <leader>b :vscmd Debug.ToggleBreakpoint<CR>
+map <leader>dl :vscmd Debug.StepInto<CR>
+map <leader>dj :vscmd Debug.StepOver<CR>
+map <leader>dk :vscmd Debug.StepOut<CR>
+map <leader>drc :vscmd Debug.RunToCursor<CR>
+map <leader>d_ :vscmd Debug.Restart<CR>
+map <leader>dw :vscmd Debug.AddWatch<CR>
 
 " method movement & manipulation
 "   \(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(
