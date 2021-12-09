@@ -6,7 +6,7 @@ set scrolloff=2
 
 set history=999
 
-set relativenumber
+" set relativenumber
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -129,6 +129,11 @@ nnoremap <leader>tt :vscmd TestExplorer.ShowTestExplorer<CR>
 nnoremap <leader>tdb :vscmd TestExplorer.DebugAllTestsInContext<CR>
 nnoremap <leader>ta :vscmd TestExplorer.RunAllTests<CR>
 nnoremap <leader>tr :vscmd TestExplorer.RepeatLastRun<CR>
+
+" navigate changelist
+map <leader>cc :vscmd Team.Git.GoToGitChanges<CR>
+map <leader>c :vscmd Diff.NextDifference<CR>
+map <leader>C :vscmd Diff.PreviousDifference<CR>
 
 " show info
 nnoremap <leader>k :vscmd Edit.QuickInfo<CR>
