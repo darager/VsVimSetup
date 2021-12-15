@@ -114,6 +114,7 @@ nnoremap <C-n> :vscmd View.SolutionExplorer<CR>
 
 " save and close all open documents
 nnoremap <leader>qa :vscmd File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
+nnoremap <leader>qo :vscmd File.SaveAll<CR> :vsc File.CloseAllButThis<CR>
 
 " function navigation
 nnoremap gd :vscmd Edit.GoToDefinition<CR>
