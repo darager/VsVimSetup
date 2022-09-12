@@ -132,7 +132,7 @@ nnoremap <leader>ta :vscmd TestExplorer.RunAllTests<CR>
 nnoremap <leader>tr :vscmd TestExplorer.RepeatLastRun<CR>
 
 " navigate changelist
-map <leader>cc :vscmd Team.Git.GoToGitChanges<CR>
+"map <leader>cc :vscmd Team.Git.GoToGitChanges<CR> " overwrites comment line command
 map <leader>c :vscmd Diff.NextDifference<CR>
 map <leader>C :vscmd Diff.PreviousDifference<CR>
 
@@ -151,6 +151,11 @@ map <leader>dk :vscmd Debug.StepOut<CR>
 map <leader>drc :vscmd Debug.RunToCursor<CR>
 map <leader>d_ :vscmd Debug.Restart<CR>
 map <leader>dw :vscmd Debug.AddWatch<CR>
+
+" delete without writing register
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP
 
 " method movement & manipulation
 "   \(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(
