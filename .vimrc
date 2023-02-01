@@ -126,13 +126,14 @@ vnoremap > >gv
 vnoremap < <gv
 
 " run tests and open test explorer
-nnoremap <leader>tt :vscmd TestExplorer.ShowTestExplorer<CR>
+nnoremap <leader>te :vscmd TestExplorer.ShowTestExplorer<CR>
+nnoremap <leader>tap :vscmd TestExplorer.AddToPlaylist<CR>
 nnoremap <leader>tdb :vscmd TestExplorer.DebugAllTestsInContext<CR>
-nnoremap <leader>ta :vscmd TestExplorer.RunAllTests<CR>
+nnoremap <leader>tdbl :vscmd TestExplorer.DebugLastRun<CR>
 nnoremap <leader>tr :vscmd TestExplorer.RepeatLastRun<CR>
+nnoremap <leader>tra :vscmd TestExplorer.RunAllTests<CR>
 
 " navigate changelist
-"map <leader>cc :vscmd Team.Git.GoToGitChanges<CR> " overwrites comment line command
 map <leader>c :vscmd Diff.NextDifference<CR>
 map <leader>C :vscmd Diff.PreviousDifference<CR>
 
@@ -149,13 +150,9 @@ map <leader>dl :vscmd Debug.StepInto<CR>
 map <leader>dj :vscmd Debug.StepOver<CR>
 map <leader>dk :vscmd Debug.StepOut<CR>
 map <leader>drc :vscmd Debug.RunToCursor<CR>
+map <leader>dc :vscmd Debug.Start<CR>
 map <leader>d_ :vscmd Debug.Restart<CR>
 map <leader>dw :vscmd Debug.AddWatch<CR>
-
-" delete without writing register
-nnoremap <leader>d "_d
-xnoremap <leader>d "_d
-xnoremap <leader>p "_dP
 
 " method movement & manipulation
 "   \(public\|private\|protected\|internal\|virtual\|static\)[^=]\+\?(
