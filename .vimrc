@@ -112,7 +112,8 @@ nnoremap <C-I> :vscmd View.NavigateForward<CR>
 " start the solution script
 nnoremap <C-n> :vscmd View.SolutionExplorer<CR>
 
-" save and close all open documents
+" save and close open documents
+nnoremap <leader>qq :vscmd File.SaveSelectedItems<CR> :vsc File.Close<CR>
 nnoremap <leader>qa :vscmd File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
 nnoremap <leader>qo :vscmd File.SaveAll<CR> :vsc File.CloseAllButThis<CR>
 
@@ -151,6 +152,7 @@ map <leader>dj :vscmd Debug.StepOver<CR>
 map <leader>dk :vscmd Debug.StepOut<CR>
 map <leader>drc :vscmd Debug.RunToCursor<CR>
 map <leader>dc :vscmd Debug.Start<CR>
+map <leader>ds :vscmd Debug.StopDebugging<CR>
 map <leader>d_ :vscmd Debug.Restart<CR>
 map <leader>dw :vscmd Debug.AddWatch<CR>
 
