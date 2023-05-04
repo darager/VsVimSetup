@@ -115,7 +115,7 @@ nnoremap <C-n> :vscmd View.SolutionExplorer<CR>
 " save and close open documents
 nnoremap <leader>qq :vscmd File.SaveSelectedItems<CR> :vsc File.Close<CR>
 nnoremap <leader>qa :vscmd File.SaveAll<CR> :vsc Window.CloseAllDocuments<CR>
-nnoremap <leader>qo :vscmd File.SaveAll<CR> :vsc File.CloseAllButThis<CR>
+nnoremap <leader>qo :vsc File.CloseAllButThis<CR>
 
 " function navigation
 nnoremap gd :vscmd Edit.GoToDefinition<CR>
@@ -131,7 +131,7 @@ nnoremap <leader>te :vscmd TestExplorer.ShowTestExplorer<CR>
 nnoremap <leader>tap :vscmd TestExplorer.AddToPlaylist<CR>
 nnoremap <leader>tdb :vscmd TestExplorer.DebugAllTestsInContext<CR>
 nnoremap <leader>tdbl :vscmd TestExplorer.DebugLastRun<CR>
-nnoremap <leader>tr :vscmd TestExplorer.RepeatLastRun<CR>
+nnoremap <leader>trl :vscmd TestExplorer.RepeatLastRun<CR>
 nnoremap <leader>tra :vscmd TestExplorer.RunAllTests<CR>
 
 " navigate changelist
